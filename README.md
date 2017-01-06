@@ -17,5 +17,8 @@ No setup required. just clink the link provided below:
 - bootstrap
 - Javascript
 
-## Copyright
-MIT 2017
+## Copyright & Licensing
+MIT License
+
+Copyright &copy; 2017 github.com/mkelley2
+
