@@ -116,6 +116,13 @@ float: right;
   font-weight: bold;
 }
 
+footer {
+  font: 20px;
+  color: white;
+  margin-right: 10%;
+  float: right;
+}
+
 @media screen and (max-width:1020px) {
   #big_nav{
     display: none;
