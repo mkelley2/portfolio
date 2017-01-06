@@ -5,7 +5,9 @@
 ##Description
 This is a website to showcase my work and info to my peers and potential employers
 
-##Link:
+##Setup
+No setup required. just clink the link provided below:
+
 [Link to site](https://mkelley2.github.io/portfolio/)
 
 ##Tech Used
