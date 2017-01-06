@@ -16,36 +16,45 @@
       </div>
       <img src="https://avatars0.githubusercontent.com/u/13737040?v=3&s=460" id="prof_pic"  alt=" Picture of Matt Kelley">
       <div class="row">
-        <!-- navbar -->
-        <div class="navbar" id="big_nav">
-          <ul>
-            <li class="nav_links">
+        <div class="row">
+          <!-- navbar -->
+          <div class="navbar" id="big_nav">
+            <ul>
+              <li class="nav_links">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav_links">
+                <a href="about.html">About Me</a>
+              </li>
+              <li class="nav_links">
+                <a href="resume.html">Resumé</a>
+              </li>
+              <li class="nav_links">
+                <a href="https://github.com/mkelley2/"><img src="img/GitHub_Logo.png" id="github_logo" alt="github's logo"></a>
+              </li>
+              <li class="nav_links">
+                <a href="https://www.linkedin.com/in/mattkelley3"><img src="img/linked_Logo.png" id="linked_logo" alt="LinkedIn's logo"></a>
+              </li>
+            </ul>
+          </div><!-- end of big navbar-->
+          <div class="navbar" id="sm_nav">
+            <button onclick="dropFunction()" class="drop_btn">Menu</button>
+            <div id="drop_id" class="drop_cont">
               <a href="index.html">Home</a>
-            </li>
-            <li class="nav_links">
               <a href="about.html">About Me</a>
-            </li>
-            <li class="nav_links">
               <a href="resume.html">Resumé</a>
-            </li>
-          </ul>
-        </div><!-- end of big navbar-->
-        <div class="navbar" id="sm_nav">
-          <button onclick="dropFunction()" class="drop_btn">Menu</button>
-          <div id="drop_id" class="drop_cont">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="resume.html">Resumé</a>
-          </div>
-          <script>
+              <a href="https://github.com/mkelley2/"><img src="img/GitHub_Logo.png" id="github_logo" alt="github's logo"></a>
+              <a href="https://www.linkedin.com/in/mattkelley3"><img src="img/linked_Logo.png" id="linked_logo" alt="LinkedIn's logo"></a>
+            </div>
+            <script>
             function dropFunction() {
               document.getElementById("drop_id").classList.toggle("show");
             }
-
+            
             // Close the dropdown menu if the user clicks outside of it
             window.onclick = function(event) {
               if (!event.target.matches('.drop_btn')) {
-
+                
                 var dropdowns = document.getElementsByClassName("drop_cont");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
@@ -71,7 +80,8 @@
             //     }
             //   }
             // };
-          </script>
+            </script>
+          </div>
         </div>
       </div>
       <div class="row" id="holder"> <!-- main row -->

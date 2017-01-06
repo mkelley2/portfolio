@@ -51,12 +51,6 @@ h3 {
   font-size: 20px;
 }
 
-/*.navbar li {
-  background-color: grey;
-  padding: 10px;
-  border-radius: 10px;
-  /*width:50px;*/
-
 
 .navbar a {
   color: black;
@@ -65,8 +59,17 @@ h3 {
 
 .navbar li, .navbar button {
   float: left;
-  margin: 50px;
+  margin: 30px;
   margin-top: 10px;
+}
+
+#social_links {
+  /*float: right;*/
+  color: white;
+}
+
+#big_nav{
+  margin-bottom: 20px;
 }
 
 #sm_nav{
@@ -146,6 +149,16 @@ footer {
 
 #pdf {
   font-size: 16px;
+}
+
+#github_logo {
+  width: 25px;
+}
+
+#linked_logo {
+  width: 25px;
+  margin-top: -3px;
+  background-color: none;
 }
 
 center img {
