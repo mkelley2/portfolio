@@ -17,6 +17,10 @@ h3, h4 {
   text-align: center;
 }
 
+.proj_span {
+  font-style: italic;
+}
+
 #navbar{
   text-align: center;
 }
