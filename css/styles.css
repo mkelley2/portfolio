@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#welcome_mes {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#navbar{
+  text-align: center;
+}
+
+#navbar ul {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: 1px solid black;
+}
+
+#navbar li {
+  float: left;
+  margin: 20px;
+}
+
+.panel-body a{
+float: right;
+color: red;
+}
