@@ -12,7 +12,7 @@ body {
   margin-left: 10px;
 }
  
-span {
+#span_title {
   font-family:cursive;
 }
 
@@ -51,6 +51,9 @@ h3 {
   padding: 0px;
   list-style: none;
   font-size: 18px;
+}
+
+.navbar li {
 }
 
 .navbar li, .navbar button {
@@ -107,6 +110,10 @@ h3 {
 
 .panel-body a{
 float: right;
+}
+
+.panel-body span{
+  font-weight: bold;
 }
 
 @media screen and (max-width:1020px) {
