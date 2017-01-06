@@ -2,6 +2,10 @@
     width: 90%;
 }
 
+span {
+  font-family:cursive;
+}
+
 .welcome {
   text-align: center;
 }
