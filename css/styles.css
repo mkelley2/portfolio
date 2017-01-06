@@ -59,7 +59,7 @@ h3 {
 
 .navbar li, .navbar button {
   float: left;
-  margin: 50px;
+  margin: 30px;
   margin-top: 10px;
 }
 
@@ -82,7 +82,7 @@ h3 {
     position:fixed;
     background-color: lightgrey;
     min-width: 160px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 10px;
     border-radius: 10px;
 }
