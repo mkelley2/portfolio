@@ -88,11 +88,13 @@ h3 {
 
 .drop_btn {
   width: 80px;
-  height: 50px;
+  height: 40px;
   background-color: lightgrey;
   color: black;
   border-radius: 10px;
   font-size: 20px;
+  font-family: Arial;
+  /*font-weight: bold;*/
 }
 
 .show {
@@ -105,7 +107,6 @@ h3 {
 
 .panel-body a{
 float: right;
-color: red;
 }
 
 @media screen and (max-width:1020px) {

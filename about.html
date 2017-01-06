@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>About Matt</title>
@@ -10,9 +11,9 @@
     <h2 class="welcome_mes">Would you like to know more?</h2>
     <div class="container">
       <img src="https://avatars0.githubusercontent.com/u/13737040?v=3&s=460" id="prof_pic">
-      <div class="row"> <!-- nav row -->
+      <div class="row">
         <!-- navbar -->
-        <div class="navbar">
+        <div class="navbar" id="big_nav">
           <ul>
             <li class="nav_links">
               <a href="index.html">Home</a>
@@ -28,6 +29,50 @@
             </li>
           </ul>
         </div><!-- end of navbar-->
+        <div class="navbar" id="sm_nav">
+          <button onclick="dropFunction()" class="drop_btn">Menu</button>
+          <div id="drop_id" class="drop_cont">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#">Resume</a>
+            <a href="#">Toy Projects</a>
+          </div>
+          <script>
+            function dropFunction() {
+              document.getElementById("drop_id").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.drop_btn')) {
+
+                var dropdowns = document.getElementsByClassName("drop_cont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            };
+            
+            // // Close the dropdown menu if the user hovers outside of it
+            // window.onmouseout = function(event) {
+            //   if (!event.target.matches('.drop_btn')) {
+            // 
+            //     var dropdowns = document.getElementsByClassName("drop_cont");
+            //     var i;
+            //     for (i = 0; i < dropdowns.length; i++) {
+            //       var openDropdown = dropdowns[i];
+            //       if (openDropdown.classList.contains('show')) {
+            //         openDropdown.classList.remove('show');
+            //       }
+            //     }
+            //   }
+            // };
+          </script>
+        </div>
       </div>
       <div class="row" id="holder"> <!-- main row -->
         <h3>Education:</h3>
