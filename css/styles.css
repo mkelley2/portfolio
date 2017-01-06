@@ -47,13 +47,20 @@ h3 {
 }
 
 .navbar ul {
-  margin: 0px;
-  padding: 0px;
   list-style: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.navbar li {
+/*.navbar li {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  /*width:50px;*/
+
+
+.navbar a {
+  color: black;
+  
 }
 
 .navbar li, .navbar button {
@@ -92,6 +99,20 @@ h3 {
 .drop_btn {
   width: 80px;
   height: 40px;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Arial;
+  outline: none;
+  border: none;
+}
+
+.navbar li {
+  height: 40px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom:5px;
   background-color: lightgrey;
   color: black;
   border-radius: 10px;
