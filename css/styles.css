@@ -1,5 +1,10 @@
+body {
+  background-image: url("../img/background.jpg");
+}
+
 .container {
     width: 90%;
+    background: 
 }
 
 span {
@@ -8,12 +13,14 @@ span {
 
 .welcome {
   text-align: center;
+  color: white;
 }
 
 .welcome_mes {
   text-align: center;
+  color: white;
   font-size: 18px;
-  margin-bottom: 0px;
+  /*margin-bottom: 0px;*/
   margin-top: 0px;
 }
 
