@@ -2,176 +2,122 @@
 <html>
   <head>
    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src='js/scripts.js'></script>
     
     <title>Matt Kelley's Portfolio</title>
     
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <H1 class="welcome" >Welcome to my <span id="span_title">Portfolio</span>.</H1>
-        <h2 class="welcome_mes">Enjoy your Stay!</h2>
-      </div>
-      <img src="https://avatars0.githubusercontent.com/u/13737040?v=3&s=460" id="prof_pic"  alt=" Picture of Matt Kelley">
-      <div class="row">
-        <div class="row">
-          <!-- navbar -->
-          <div class="navbar" id="big_nav">
-            <ul>
-              <li class="nav_links">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="nav_links">
-                <a href="about.html">About Me</a>
-              </li>
-              <li class="nav_links">
-                <a href="resume.html">Resumé</a>
-              </li>
-              <li class="nav_links">
-                <a href="https://github.com/mkelley2/" target="_blank"><img src="img/ghlogo.png" id="github_logo" alt="github's logo"></a>
-              </li>
-              <li class="nav_links">
-                <a href="https://www.linkedin.com/in/mattkelley3" target="_blank"><img src="img/linked_Logo.png" id="linked_logo" alt="LinkedIn's logo"></a>
-              </li>
+      <h1><a href="/">Matt Kelley's Portfolio</a></h1>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
-          </div><!-- end of big navbar-->
-          <div class="navbar" id="sm_nav">
-            <button onclick="dropFunction()" class="drop_btn">Menu</button>
-            <div id="drop_id" class="drop_cont">
-              <a href="index.html">Home</a>
-              <a href="about.html">About Me</a>
-              <a href="resume.html">Resumé</a>
-              <a href="https://github.com/mkelley2/" target="_blank"><img src="img/ghlogo.png" id="github_logo" alt="github's logo"></a>
-              <a href="https://www.linkedin.com/in/mattkelley3" target="_blank"><img src="img/linked_Logo.png" id="linked_logo" alt="LinkedIn's logo"></a>
-            </div>
-            <script>
-            function dropFunction() {
-              document.getElementById("drop_id").classList.toggle("show");
-            }
-            
-            // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.drop_btn')) {
-                
-                var dropdowns = document.getElementsByClassName("drop_cont");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            };
-            
-            // // Close the dropdown menu if the user hovers outside of it
-            // window.onmouseout = function(event) {
-            //   if (!event.target.matches('.drop_btn')) {
-            // 
-            //     var dropdowns = document.getElementsByClassName("drop_cont");
-            //     var i;
-            //     for (i = 0; i < dropdowns.length; i++) {
-            //       var openDropdown = dropdowns[i];
-            //       if (openDropdown.classList.contains('show')) {
-            //         openDropdown.classList.remove('show');
-            //       }
-            //     }
-            //   }
-            // };
-            </script>
           </div>
         </div>
-      </div>
-      <div class="row" id="holder"> <!-- main row -->
-        <h3>Latest Work:</h3>
-        <div class="row" id="proj_div">
-          <div class="col-md-4">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  <h4>Fakepedia</h4>
-                </div>
-              </div>
-              <div class="panel-body">
-                <p>
-                  This is a website to practice using bootstrap by recreating the wikipedia homepage. By using the bootstrap columns and rows we were able to closely copy the look and functionality of the wikipedia home page.
-                </p>
-                <span><p><em>Languages</em> and <em>Tools</em> used:</p></span>
-                <ol>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>Git</li>
-                </ol>
-                <a href="https://github.com/mkelley2/fakepedia" class="repo_link">Link To Github</a>
-              </div>
-            </div>
+      </nav>
+      <h2 class='sectional' id='project'>Projects</h2>
+      <div class="project_div row container">
+        <div class="epicodus_cap_holder row container">
+          <h3 class='project_title'>Epicodus Capstone: What's On?</h3>
+          <div class="col-xs-6">
+            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
           </div>
-          
-          <div class="col-md-4">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  <h4>Epicodus Week 1 Review</h4>
-                </div>
-              </div>
-              <div class="panel-body">
-                <p>
-                  This simple page is designed to show what we have gone over and learned in our first week at Epicodus
-                </p>
-                <p>
-                  
-                <p><span><em>Languages</em> and <em>Tools</em> used:</span></p>
-                <ol>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>Git</li>
-                </ol>
-                <a href="https://github.com/mkelley2/first-week-review" class="repo_link">Link To Github</a>
-              </div>
-            </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>Do you watch too many tv shows and can't keep track of what's on? This app allows users to add their favorite tv shows to their account and automatically see what is on this week. Users can then scroll forwards and backwards through the weeks to see what they missed or what is coming up.</li>
+              <li><b>Technologies used:</b> Drupal 7, JavaScript, PHP, pantheon, jQuery, TV maze API</li>
+              <li><b>Live site: </b><a href="http://dev-wutson.pantheonsite.io">http://dev-wutson.pantheonsite.io</a></li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/wutson-pantheon">https://github.com/mkelley2/wutson-pantheon</a></li>
+            </ul>
           </div>
-          
-          <div class="col-md-4">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  <h4>DemoDay</h4>
-                </div>
-              </div>
-              <div class="panel-body">
-                <p>
-                  This project was designed as a web platform for members of the community to showcase and present their work to their peers. Users can log in through Github in order to create an account and profile page and select a project that they would wish to showcase. The selected project will have it's own profile page as well in order to quickly show som of it's deatils and links.
-                </p>
-                <p>
-                  
-                <p><span><em>Languages</em> and <em>Tools</em> used:</span></p>
-                <ol>
-                  <li>Bootstrap</li>
-                  <li>Backbone.js</li>
-                  <li>Express.js</li>
-                  <li>Node.js / npm</li>
-                  <li>Passport js</li>
-                  <li>Github API</li>
-                  <li>Orchestrate.io</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>Handlebars</li>
-                </ol>
-                <a href="https://github.com/Operationprojectproject/OPP" class="repo_link">Link To Github</a><br>
-                <a href="http:demoday.ninja" class="repo_link">Link To Live Site</a>
-              </div>
-            </div>
+        </div>
+        <div class="homebase_holder row container">
+          <h3 class='project_title'>Homebase</h3>
+          <div class="col-xs-6">
+            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>A tool for little league coaches and parents. Allows the coach to create random batting orders and assigns positions for each inning, giving each player a equal amount of playing time. Also has a gamification system so players can earn experience to gain levels and badges as they practice and learn the game.</li>
+              <li><b>Technologies used:</b> Drupal 8, JavaScript, PHP, pantheon</li>
+              <li><b>Live site: </b><a href="http://dev-homebase.pantheonsite.io">http://dev-homebase.pantheonsite.io</a></li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/Drupal-Homebase">https://github.com/mkelley2/Drupal-Homebase</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="dndgen_holder row container">
+          <h3 class='project_title'>DND Campaign Generator</h3>
+          <div class="col-xs-6">
+            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>This website for the tabletop role-playing game Dungeons and Dragons allows a dungeon master the ability to generate a map, customize and create monsters and items, and set up character details to run a successful game. The dungeon master can save all pieces of the game they are currently playing and update it as their game goes on.</li>
+              <li><b>Technologies used:</b> Angular 2, JavaScript, DND API</li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager">https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="extreme_holder row container">
+          <h3 class='project_title'>Extreme Rock Paper Scissors</h3>
+          <div class="col-xs-6">
+            <img class='screenshot' src="img/extreme.png" alt="extreme screenshot">
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>This is personal project that was made completely for fun. It takes the age old Rock Paper Scissors and amplifies it. There are now 15 options to choose from. In the EXXTREME mode, when you lose a round the last move you made is removed from your options. The game goes until one person is completely out of moves. The game is available in both single and 2 player modes.</li>
+              <li><b>Technologies used:</b> JavaScript, jQuery, PHP, Silex, Twig, CSS</li>
+              <li><b>Live site: </b><a href="http://extreme-rps.herokuapp.com/">http://extreme-rps.herokuapp.com/</a></li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/ExtremeRPS">https://github.com/mkelley2/ExtremeRPS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="fedcus_holder row container">
+          <h3 class='project_title'>FEDCUS Trading System</h3>
+          <div class="col-xs-6">
+          <img class='screenshot' src="img/fedcus.png" alt="fedcus screenshot">
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>This is personal project that I made for me and my friends to help us keep track of various extra items we have in game for Warframe. Each user can put up any item they have extras of or any items they are looking for. This helps prevent any of us from deleting or throwing away items that we have extra of and someone needs.</li>
+              <li><b>Technologies used:</b> JavaScript, jQuery, PHP, Silex, Twig</li>
+              <li><b>Live site: </b><a href="http://fedcus.herokuapp.com/">http://fedcus.herokuapp.com/</a></li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/FedCUS">https://github.com/mkelley2/FedCUS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="opp_holder row container">
+          <h3 class='project_title'>Portland Code School Capstone: Demoday</h3>
+          <div class="col-xs-6">
+            <img class='screenshot' src="img/demoday.png" alt="opp screenshot">
+          </div>
+          <div class="col-xs-6">
+            <ul>
+              <li><b>Description: </b>This Capstone Project was designed with the idea that would allow other students to show off their projects online. In previous classes the class handed out pamphlets with the info about their project. So we decided to digitize that and allow the students to show off their projects online and all in one place. On top of that users are also able to sign in through their Github account and make their own personal profile page to display their abilities for any potential employers.<span id='notice'>**</span>Notice: This site is now depricated due to Orchestrate shutting down.</li>
+              <li><b>Technologies used:</b> JavaScript, jQuery, Orchestrate.io, express.js, backbone.js, Passport, node.js, Github API</li>
+              <li><b>Live site: </b><a href="http://demoday.ninja/">http://demoday.ninja/<span id='notice'>**</span></a></li>
+              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/OPP">https://github.com/mkelley2/OPP</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <p>Copyright &copy; 2017 github.com/mkelley2</p>
-    </footer>
   </body>
 </html>
 
