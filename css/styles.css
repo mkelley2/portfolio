@@ -1,14 +1,14 @@
 body {
-  background-color: #F5B27A;
-  color: black;
+  background-color: #3a3736;
+  color: #ccc5c5;
 }
 
 a {
-  color: #2D7D7D;
+  color: white;
 }
 
 .navbar-inverse {
-  background-color: #D0874B;
+  background-color: #d31717;
   background-image: none;
 }
 
@@ -18,6 +18,12 @@ a {
 
 .navbar-inverse .navbar-nav >li>a {
   color: black;
+}
+.navbar-inverse .navbar-nav >li>a:hover {
+  background-image: none;
+  background-color: #7a2f2f;
+  border-left: 3px solid #5b1212;
+  border-right: 3px solid #5b1212;
 }
 
 .screenshot {
@@ -84,16 +90,18 @@ a {
 }
 
 .panel-body {
-  background-color: #FFE3CD;
+  background-color: #2E3338;
+  /*color: black;*/
 }
 
 .panel {
-  border: 2px solid black;
+  border: 2px solid #e24a4a;
 }
 
 .panel-info .panel-heading, .well{
-  background-color: #FFCEA6;
+  background-color: #777373;
   color: black;
+  border: 1px solid #c6bebe;
 }
 
 .expansion {
@@ -119,3 +127,4 @@ a {
 .logo {
   width: 16px;
 }
+
