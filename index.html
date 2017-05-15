@@ -15,109 +15,304 @@
     
   </head>
   <body>
-    <div class="container">
-      <h1><a href="/">Matt Kelley's Portfolio</a></h1>
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Home</a>
-          </div>
+      <div id=navbar>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#project">Matt Kelley</a>
+            </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container main_holder">
+        <div class="project_div row container">
+          <h2 class='sectional' id='project'>Projects</h2>
+          <div class="epicodus_cap_holder row container">
+            <h3 class='project_title'>Epicodus Capstone: What's On?</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/filler.png" alt="filler screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>Do you watch too many tv shows and can't keep track of what's on? This app allows users to add their favorite tv shows to their account and automatically see what is on this week. Users can then scroll forwards and backwards through the weeks to see what they missed or what is coming up.</li>
+                  <li><b>Technologies used:</b> <span class="label label-success">Drupal 7</span> <span class="label label-php">PHP</span> <span class="label label-info">JavaScript</span> <span class="label label-info">jQuery</span> <span class="label label-primary">pantheon</span> <span class="label label-api">TV maze API</span></li>
+                  <li><b>Live site: </b><a href="http://dev-wutson.pantheonsite.io">http://dev-wutson.pantheonsite.io</a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/wutson-pantheon">https://github.com/mkelley2/wutson-pantheon</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="homebase_holder row container">
+            <h3 class='project_title'>Homebase</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/filler.png" alt="filler screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>A tool for little league coaches and parents. Allows the coach to create random batting orders and assigns positions for each inning giving each player a equal amount of playing time. Also has a gamification system so players can earn experience to gain levels and badges as they practice and learn the game.</li>
+                  <li><b>Technologies used:</b> <span class="label label-success">Drupal 8</span> <span class="label label-info">JavaScript</span> <span class="label label-php">PHP</span> <span class="label label-primary">pantheon</span></li>
+                  <li><b>Live site: </b><a href="http://dev-homebase.pantheonsite.io">http://dev-homebase.pantheonsite.io</a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/Drupal-Homebase">https://github.com/mkelley2/Drupal-Homebase</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dndgen_holder row container">
+            <h3 class='project_title'>DND Campaign Generator</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/filler.png" alt="filler screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>This website for the tabletop role-playing game Dungeons and Dragons allows a dungeon master the ability to generate a map customize and create monsters and items and set up character details to run a successful game. The dungeon master can save all pieces of the game they are currently playing and update it as their game goes on.</li>
+                  <li><b>Technologies used:</b> <span class="label label-success">Angular 2</span> <span class="label label-info">JavaScript</span> <span class="label label-db">Firebase</span> <span class="label label-html">Handlebars</span> <span class="label label-api">DND API</span></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager">https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="extreme_holder row container">
+            <h3 class='project_title'>Extreme Rock Paper Scissors</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/extreme.png" alt="extreme screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>This is personal project that was made completely for fun. It takes the age old Rock Paper Scissors and amplifies it. There are now 15 options to choose from. In the EXXTREME mode when you lose a round the last move you made is removed from your options. The game goes until one person is completely out of moves. The game is available in both single and 2 player modes.</li>
+                  <li><b>Technologies used:</b> <span class="label label-info">JavaScript</span> <span class="label label-info">jQuery</span> <span class="label label-php">PHP</span> <span class="label label-php">Silex</span> <span class="label label-html">Twig</span> <span class="label label-db">MySQL</span> <span class="label label-warning">CSS</span></li>
+                  <li><b>Live site: </b><a href="http://extreme-rps.herokuapp.com/">http://extreme-rps.herokuapp.com/</a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/ExtremeRPS">https://github.com/mkelley2/ExtremeRPS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fusion_holder row container">
+            <h3 class='project_title'>Extreme Rock Paper Scissors</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/fusion.png" alt="fusion screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>A forum where a user may post create a profile with bio post content comment on forum content rank other users upload photos and search content through hashtags.</li>
+                  <li><b>Technologies used:</b> <span class="label label-info">JavaScript</span> <span class="label label-info">jQuery</span> <span class="label label-php">PHP</span> <span class="label label-php">Silex</span> <span class="label label-html">Twig</span> <span class="label label-warning">CSS</span></li>
+                  <li><b>Live site: </b><a href="http://code-fusion.herokuapp.com/">http://code-fusion.herokuapp.com/</a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/forum_project">https://github.com/mkelley2/forum_project</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fedcus_holder row container">
+            <h3 class='project_title'>FEDCUS Trading System</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/fedcus.png" alt="fedcus screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>This is personal project that I made for me and my friends to help us keep track of various extra items we have in game for Warframe. Each user can put up any item they have extras of or any items they are looking for. This helps prevent any of us from deleting or throwing away items that we have extra of and someone needs.</li>
+                  <li><b>Technologies used:</b> <span class="label label-info">JavaScript</span> <span class="label label-info">jQuery</span> <span class="label label-php">PHP</span> <span class="label label-php">Silex</span> <span class="label label-html">Twig</span> <span class="label label-db">MySQL</span></li>
+                  <li><b>Live site: </b><a href="http://fedcus.herokuapp.com/">http://fedcus.herokuapp.com/</a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/FedCUS">https://github.com/mkelley2/FedCUS</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+          <div class="opp_holder row container">
+            <h3 class='project_title'>Portland Code School Capstone: Demoday</h3>
+            <div class="col-xs-6">
+              <img class='screenshot' src="img/demoday.png" alt="opp screenshot">
+            </div>
+            <div class="col-xs-6">
+              <div class="well">
+                <ul>
+                  <li><b>Description: </b>This Capstone Project was designed with the idea that would allow other students to show off their projects online. In previous classes the class handed out pamphlets with the info about their project. So we decided to digitize that and allow the students to show off their projects online and all in one place. On top of that users are also able to sign in through their Github account and make their own personal profile page to display their abilities for any potential employers.<span id='notice'>**</span>Notice: This site is now depricated due to Orchestrate shutting down.</li>
+                  <li><b>Technologies used:</b> <span class="label label-info">JavaScript</span> <span class="label label-info">jQuery</span> <span class="label label-db">Orchestrate.io</span> <span class="label label-info">express.js</span> <span class="label label-success">backbone.js</span> <span class="label label-primary">Passport</span> 
+                  <span class="label label-info">node.js</span> <span class="label label-api">Github API</span> <span class="label label-html">Handlebars</span></li>
+                  <li><b>Live site: </b><a href="http://demoday.ninja/">http://demoday.ninja/<span id='notice'>**</span></a></li>
+                  <li><b>Github Repo: </b><a href="https://github.com/mkelley2/OPP">https://github.com/mkelley2/OPP</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-      <h2 class='sectional' id='project'>Projects</h2>
-      <div class="project_div row container">
-        <div class="epicodus_cap_holder row container">
-          <h3 class='project_title'>Epicodus Capstone: What's On?</h3>
-          <div class="col-xs-6">
-            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>Do you watch too many tv shows and can't keep track of what's on? This app allows users to add their favorite tv shows to their account and automatically see what is on this week. Users can then scroll forwards and backwards through the weeks to see what they missed or what is coming up.</li>
-              <li><b>Technologies used:</b> Drupal 7, JavaScript, PHP, pantheon, jQuery, TV maze API</li>
-              <li><b>Live site: </b><a href="http://dev-wutson.pantheonsite.io">http://dev-wutson.pantheonsite.io</a></li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/wutson-pantheon">https://github.com/mkelley2/wutson-pantheon</a></li>
-            </ul>
+        <div class="about_container">
+          <h2 class='sectional' id='about'>About Me:</h2>
+          <div class="container" id="holder"> <!-- main row -->
+            <h3>Education:</h3>
+            <div class="row about_row">
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>Epicodus</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p>
+                      <em>Jan, 2017</em>
+                    </p>
+                    <p>
+                      Course: Intro To Programming, PHP, Javascript, Drupal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>Portland Code School</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p>
+                      <em>Fall, 2016</em>
+                    </p>
+                    <p>
+                      Course: Fullstack Javascript
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>University of North Dakota</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p>
+                      <em>2008-2010</em>
+                    </p>
+                    <p>
+                      Worked towards a Major in Air Traffic Control and a minor in Mathematics. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <h3>Job Experience:</h3>
+            <div class="row about_row">
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>Amazon</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p><em>August 2014-March 2015</em></p>
+                    <p>
+                      At Amazon I was a CSA III in the Amazon Payments department. During my time there I took call from my department along side with Amazon Canada and the regular Amazon Customer Service Issues line. I helped customers solved any and every problem that they came to me with. I recieved 2 promotions within the first 2 months of my job there and was a top performer in my department, 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>El Roco Bottleshop</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p><em>April 2011-May 2014</em></p>
+                    <p>
+                      During my time at El Roco I was the manager in the Bottleshop. My duties included everything from receiving and signing in shipments, ringing customers up at the register, making the schedule for about 10-20 people depending on current staff size, as well as doing the first round of job interviews for any potential employee. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4>Petco</h4>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p><em>March 2010-June 2011</em></p>
+                    <p>
+                      At Petco I was the Lead Stock Associate. My job duties included around recieving shipments, making sure the back warehouse was keep in order, keeping the floor stocking and also ringing customers up at the register when lines began to form. From time to time I also helped out in other departments when I was needed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <h3>Life Story:</h3>
+            <div class="row about_row">
+              <div class="col-md-10 col-md-offset-1" id="hobbies">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <p>
+                     So now you know what I can do. But what now you have got to be wondering, who am I and what do I do for <strong>fun</strong>. I grew up in San Diego, Ca. During my time there I spent every bit of it I could enjoying everything San Diego has to offer to a kid. Everything from surfing, to wakeboarding or even just bicycling down the boardwalk. Seaworld was a short drive from my house so I spent many weekends during the summer there. My family also spent most of our holiday vacations camping. Our most popular location was the Colorado River and the dunes in Glamis. I also played a few sports including baseball, soccer and roller hockey. Hockey was by far my favorite</p>
+                      
+                      <p>At 13 I moved to Portland, OR and stayed through High School. After the move I transitioned from roller hockey to ice. But when I made it to High School I ended up having to play for a completely different school than where I went since my school did not have it's own team. Which was awkward to say the least.</p>
+                      
+                      <p>When I graduated High School my next adventure was College. I decided I wanted to be an Air Traffic Controller at a young age so I made my way to University of North Dakota. UND has the best civilian ATC training program but it also has the drawback of being in North Dakota. I went to UND for 2 years and spent some of that time working toward smy Pilot's License when I decided that Aviation was just not for me. I moved on but stayed in ND as I decided what was next. It was also during this time that my interest in computers grew. I learned how to build my first PC and got pretty into PC gaming. Since then I have taken apart and upgraded various computer components many times.</p>
+                      
+                      <p>Eventually while trying decide what I wanted to do next I decided on coding. During High School I had taken every computer class they offered and I enjoyed every single one of them. So since there are so many opportnities here I made my way back to Portland. My first step was to make it through the Full Stack JavaScript course at Portland Code School. I enjoyed my time there and learned a lot but unfortunately the school close down in the last weeks of class. But we did not give up. The students and teachers preservered on and finished the course outside the school at where ever would take us. During this time is when I finished my capstone project with my partner. After that the job hunt began</p>
+                      
+                      <p>After a few months of job search I decided I wanted to get some more tools in belt to help secure a better job. That is when I decided to go to Epicodus. Which brings us to where we are now with you reading this portfolio and hopefully with a job offer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div class="homebase_holder row container">
-          <h3 class='project_title'>Homebase</h3>
-          <div class="col-xs-6">
-            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>A tool for little league coaches and parents. Allows the coach to create random batting orders and assigns positions for each inning, giving each player a equal amount of playing time. Also has a gamification system so players can earn experience to gain levels and badges as they practice and learn the game.</li>
-              <li><b>Technologies used:</b> Drupal 8, JavaScript, PHP, pantheon</li>
-              <li><b>Live site: </b><a href="http://dev-homebase.pantheonsite.io">http://dev-homebase.pantheonsite.io</a></li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/Drupal-Homebase">https://github.com/mkelley2/Drupal-Homebase</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="dndgen_holder row container">
-          <h3 class='project_title'>DND Campaign Generator</h3>
-          <div class="col-xs-6">
-            <img class='screenshot' src="img/filler.png" alt="filler screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>This website for the tabletop role-playing game Dungeons and Dragons allows a dungeon master the ability to generate a map, customize and create monsters and items, and set up character details to run a successful game. The dungeon master can save all pieces of the game they are currently playing and update it as their game goes on.</li>
-              <li><b>Technologies used:</b> Angular 2, JavaScript, DND API</li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager">https://github.com/mkelley2/DnD-Campaign-Generator-and-Manager</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="extreme_holder row container">
-          <h3 class='project_title'>Extreme Rock Paper Scissors</h3>
-          <div class="col-xs-6">
-            <img class='screenshot' src="img/extreme.png" alt="extreme screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>This is personal project that was made completely for fun. It takes the age old Rock Paper Scissors and amplifies it. There are now 15 options to choose from. In the EXXTREME mode, when you lose a round the last move you made is removed from your options. The game goes until one person is completely out of moves. The game is available in both single and 2 player modes.</li>
-              <li><b>Technologies used:</b> JavaScript, jQuery, PHP, Silex, Twig, CSS</li>
-              <li><b>Live site: </b><a href="http://extreme-rps.herokuapp.com/">http://extreme-rps.herokuapp.com/</a></li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/ExtremeRPS">https://github.com/mkelley2/ExtremeRPS</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="fedcus_holder row container">
-          <h3 class='project_title'>FEDCUS Trading System</h3>
-          <div class="col-xs-6">
-          <img class='screenshot' src="img/fedcus.png" alt="fedcus screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>This is personal project that I made for me and my friends to help us keep track of various extra items we have in game for Warframe. Each user can put up any item they have extras of or any items they are looking for. This helps prevent any of us from deleting or throwing away items that we have extra of and someone needs.</li>
-              <li><b>Technologies used:</b> JavaScript, jQuery, PHP, Silex, Twig</li>
-              <li><b>Live site: </b><a href="http://fedcus.herokuapp.com/">http://fedcus.herokuapp.com/</a></li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/FedCUS">https://github.com/mkelley2/FedCUS</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="opp_holder row container">
-          <h3 class='project_title'>Portland Code School Capstone: Demoday</h3>
-          <div class="col-xs-6">
-            <img class='screenshot' src="img/demoday.png" alt="opp screenshot">
-          </div>
-          <div class="col-xs-6">
-            <ul>
-              <li><b>Description: </b>This Capstone Project was designed with the idea that would allow other students to show off their projects online. In previous classes the class handed out pamphlets with the info about their project. So we decided to digitize that and allow the students to show off their projects online and all in one place. On top of that users are also able to sign in through their Github account and make their own personal profile page to display their abilities for any potential employers.<span id='notice'>**</span>Notice: This site is now depricated due to Orchestrate shutting down.</li>
-              <li><b>Technologies used:</b> JavaScript, jQuery, Orchestrate.io, express.js, backbone.js, Passport, node.js, Github API</li>
-              <li><b>Live site: </b><a href="http://demoday.ninja/">http://demoday.ninja/<span id='notice'>**</span></a></li>
-              <li><b>Github Repo: </b><a href="https://github.com/mkelley2/OPP">https://github.com/mkelley2/OPP</a></li>
-            </ul>
+        <div class="contact_holder">
+          <div>
+            <h2 id='contact' class="sectional">How To Contact Me</h2>
+            <div class="container">
+              <div class="container">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <ul>
+                      <li>Phone: (503)709-2311</li>
+                      <li>Email: mkelley1412@gmail.com</li>
+                      <li>Github: <a href='https://github.com/mkelley2'>https://github.com/mkelley2</a></li>
+                      <li>Linkedin: <a href='https://www.linkedin.com/in/mattkelley3/'>https://www.linkedin.com/in/mattkelley3/</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="expansion">
+              
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </body>
-</html>
+      <footer>
+        <p>Copyright &copy; 2017 github.com/mkelley2</p>
+      </footer>
+    </body>
+    </html>
 
