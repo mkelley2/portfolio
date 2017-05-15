@@ -96,17 +96,22 @@ a {
   color: black;
 }
 
-footer {
-  bottom: 0;
-  right: 0;
-  margin-right: 10px;
-  padding: 5px 0px 0px 5px;
-  position: fixed;
-  font-size: 12px;
-  background-color: #F5B27A;
-  border-radius: 5px;
+.expansion {
+  height: 450px;
 }
 
-.expansion {
-  height: 800px;
+.section_gap{
+  height: 50px;
+}
+
+#resume {
+  width: 70%;
+}
+
+.resume_holder {
+  display: none;
+}
+
+.contact_holder .panel {
+  width: 50%;
 }

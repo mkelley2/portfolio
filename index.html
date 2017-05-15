@@ -25,22 +25,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#project">Matt Kelley</a>
+              <a class="navbar-brand other_link" href="#project">Matt Kelley</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="other_link"><a href="#about">About Me</a></li>
+                <li class="resume_link"><a>Resume</a></li>
+                <li class="other_link"><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
       <div class="container main_holder">
+        <div class="section_gap" id='project'>
+          
+        </div>
         <div class="project_div row container">
-          <h2 class='sectional' id='project'>Projects</h2>
+          <h2 class='sectional'>Projects</h2>
           <div class="epicodus_cap_holder row container">
             <h3 class='project_title'>Epicodus Capstone: What's On?</h3>
             <div class="col-xs-6">
@@ -154,9 +157,12 @@
             </div>
           </div>
         </div>
+        <div class="section_gap" id='about'>
+          
+        </div>
         <div class="about_container">
-          <h2 class='sectional' id='about'>About Me:</h2>
-          <div class="container" id="holder"> <!-- main row -->
+          <h2 class='sectional'>About Me:</h2>
+          <div class="container"> <!-- main row -->
             <h3>Education:</h3>
             <div class="row about_row">
               <div class="col-md-4">
@@ -287,16 +293,19 @@
             
           </div>
         </div>
+        <div class="section_gap" id='contact'>
+          
+        </div>
         <div class="contact_holder">
           <div>
-            <h2 id='contact' class="sectional">How To Contact Me</h2>
+            <h2 class="sectional">How To Contact Me</h2>
             <div class="container">
               <div class="container">
                 <div class="panel panel-info">
                   <div class="panel-body">
                     <ul>
                       <li>Phone: (503)709-2311</li>
-                      <li>Email: mkelley1412@gmail.com</li>
+                      <li>Email: <a href="mailto:mkelley1412@gmail.com" target="_top">mkelley1412@gmail.com</a></li>
                       <li>Github: <a href='https://github.com/mkelley2'>https://github.com/mkelley2</a></li>
                       <li>Linkedin: <a href='https://www.linkedin.com/in/mattkelley3/'>https://www.linkedin.com/in/mattkelley3/</a></li>
                     </ul>
@@ -310,9 +319,15 @@
           </div>
         </div>
       </div>
-      <footer>
-        <p>Copyright &copy; 2017 github.com/mkelley2</p>
-      </footer>
+      <div class="resume_holder">
+        <center>
+          <div class="section_gap" id='project'>
+            
+          </div>
+          <h2><a href="img/Resume.pdf" download id="pdf">Click here to download Resumé</a></h2><br>
+          <img id="resume" src="img/resume.png" alt="PDF of Resume">
+        </center>
+      </div>
     </body>
     </html>
 
