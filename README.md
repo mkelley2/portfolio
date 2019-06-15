@@ -1,16 +1,16 @@
-#Matt Kelley's Portfolio
+# Matt Kelley's Portfolio
 
-###By Matt Kelley
+### By Matt Kelley
 
-##Description
-This is a website to showcase my work and info to my peers and potential employers
+## Description
+This is a website to showcase my work and info to my peers. Created while in school. Please don't judge me.
 
-##Setup
+## Setup
 No setup required. just clink the link provided below:
 
 [Link to site](https://mkelley2.github.io/portfolio/)
 
-##Tech Used
+## Tech Used
 - Git
 - html
 - CSS
